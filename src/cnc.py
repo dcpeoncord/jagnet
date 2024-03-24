@@ -71,7 +71,7 @@ banner = f"""{gray}
 ⠀⠀⠀⠀⠀⠘⢿⠼⢸⣋⠀⠀⡍⠻⣿⣦⠀
 ⠀⠀⠀⠀⠀⠀⠆⡇⢸⡠⣐⠥⡝⠶⠛⢿⠧
 ⠀⠀⠀⠀⢀⣠⣼⣧⣼⣷⣁⣒⣡⡴⠀⢸⡆
-⠀⠀⠀⣪⠿⠗⠂⠀⠔⠊⠉⠉⠉⠉⢉⢢⠇            {lightwhite}Botnet{gray}
+⠀⠀⠀⣪⠿⠗⠂⠀⠔⠊⠉⠉⠉⠉⢉⢢⠇            {lightwhite}Infected Devices: 7439{gray}
 ⠀⣠⠮⡷⠶⠿⠿⠭⠤⠤⣕⣲⣶⣶⠾⠋⠀
 ⠊⠀⠈⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 """
@@ -312,25 +312,25 @@ def user(args, send, client):
 def update_title(client, name):
     while 1:
         try:
-            send(client, f"\33]0;J | Running: {len(bots)} | Username: {name}\a", False)
+            send(client, f"\33]0;B | Running: {len(bots)} | Username: {name}\a", False)
             time.sleep(1)
-            send(client, f"\33]0;Ja | Running: {len(bots)} | Username: {name}\a", False)
+            send(client, f"\33]0;Bo | Running: {len(bots)} | Username: {name}\a", False)
             time.sleep(1)
-            send(client, f"\33]0;Jag | Running: {len(bots)} | Username: {name}\a", False)
+            send(client, f"\33]0;Bot | Running: {len(bots)} | Username: {name}\a", False)
             time.sleep(1)
-            send(client, f"\33]0;JagN | Running: {len(bots)} | Username: {name}\a", False)
+            send(client, f"\33]0;Botn | Running: {len(bots)} | Username: {name}\a", False)
             time.sleep(1)
-            send(client, f"\33]0;JagNe| Running: {len(bots)} | Username: {name}\a", False)
+            send(client, f"\33]0;Botne| Running: {len(bots)} | Username: {name}\a", False)
             time.sleep(1)
-            send(client, f"\33]0;JagNet | Running: {len(bots)} | Username: {name}\a", False)
+            send(client, f"\33]0;Botnet | Running: {len(bots)} | Username: {name}\a", False)
             time.sleep(1)
-            send(client, f"\33]0;JagNe | Running: {len(bots)} | Username: {name}\a", False)
+            send(client, f"\33]0;Botne | Running: {len(bots)} | Username: {name}\a", False)
             time.sleep(1)
-            send(client, f"\33]0;JagN | Running: {len(bots)} | Username: {name}\a", False)
+            send(client, f"\33]0;Botn | Running: {len(bots)} | Username: {name}\a", False)
             time.sleep(1)
-            send(client, f"\33]0;Jag | Running: {len(bots)} | Username: {name}\a", False)
+            send(client, f"\33]0;Bot | Running: {len(bots)} | Username: {name}\a", False)
             time.sleep(1)
-            send(client, f"\33]0;Ja | Running: {len(bots)} | Username: {name}\a", False)
+            send(client, f"\33]0;Bo | Running: {len(bots)} | Username: {name}\a", False)
             time.sleep(1)
         except:
             client.close()
@@ -340,7 +340,7 @@ def command_line(client, username):
     for x in banner.split('\n'):
         send(client, x)
 
-    prompt = f'{color("LIGHTBLACK_EX")}[{color("WHITE")}JagNet{color("LIGHTBLACK_EX")}@{color("WHITE")}{username}{color("LIGHTBLACK_EX")}]:~# {color("LIGHTBLACK_EX")}'
+    prompt = f'{color("LIGHTBLACK_EX")}[{color("WHITE")}{username}{color("LIGHTBLACK_EX")}@{color("WHITE")}botnet{color("LIGHTBLACK_EX")}]:~# {color("LIGHTBLACK_EX")}'
     send(client, prompt, False)
 
     while 1:
